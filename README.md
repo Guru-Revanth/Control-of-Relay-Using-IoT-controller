@@ -1,4 +1,7 @@
-# Control-of-Relay-Using-IoT-controller
+# NAME : GURU REVANTH KUMARAVEL RADHIKA
+# REG NO : 212223230065
+
+# EXP 2 Control of Relay Using IoT controller
 
 ##  AIM:
 To control the Relay using Arduino controller
@@ -39,48 +42,29 @@ In this Arduino  Relay Control Circuit we have used Arduino to control the relay
 
 ## PROGRAM:
 ```
-int sensorPin = A0; // select the input pin for the LDR
+void setup() {
+  pinMode(7,OUTPUT);
+}
 
-int sensorValue = 0; // variable to store the value coming from the sensor
-
-int led = 13;
-
-void setup() { // declare the ledPin as an OUTPUT:
-
-pinMode(led, OUTPUT);
-
-Serial.begin(9600); }
-
-void loop()
-
-{
-
-Serial.println("Welcome to TechPonder LDR Tutorial");
-
-sensorValue = analogRead(sensorPin);
-
-Serial.println(sensorValue);
-
-if (sensorValue < 200)
-
-{
-
-Serial.println("LED light on");
+void loop() {
+  digitalWrite(7,HIGH);
+  delay(3000);
+  digitalWrite(7,LOW);
+  delay(1000);
+}
 ```
-
 ## CIRCUIT DIAGRAM:
-![Circuit](https://github.com/user-attachments/assets/f029a70f-2f28-402e-84c7-a0939e319ba6)
-
+<img width="1212" height="852" alt="111" src="https://github.com/user-attachments/assets/0ee12e55-b222-4b93-b249-2df9c2369366" />
 
 
 ## OUTPUT:
-## 1.OFF
-![off](https://github.com/user-attachments/assets/c932df39-803d-48da-96d7-c7ba96323b3b)
+## ON
+![ON](https://github.com/user-attachments/assets/ade6e9cd-f05e-41e6-b745-6e07930e29cb)
 
-## 2.ON
-![Screenshot_2024-10-10_083443 1](https://github.com/user-attachments/assets/0ae0caec-9651-434c-9de5-36e5e1f6a519)
-## 3.LIGHT OFF
-![Screenshot_2024-10-10_083225 1](https://github.com/user-attachments/assets/d0bc6164-580a-4ca2-ab6b-74502ce1f69e)
+
+
+## OFF
+![OFF](https://github.com/user-attachments/assets/1e535612-8d24-474b-880d-a14222e2348e)
 
 
 
